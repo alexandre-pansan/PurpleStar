@@ -1,0 +1,21 @@
+
+<nav class="navbar sticky-top">
+  <a class="navbar-brand float-left" href="#">
+    <img src="assets/synvia.svg" class="img-fluid" style="max-width: 100px;" alt="">
+  </a>
+  <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link" [class.active]="currentUrl == '/plano_carreira'" [routerLink]="'/plano_carreira'">Plano de Carreira</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [class.active]="currentUrl == '/feedback'" [routerLink]="'/feedback'">Feedback</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [class.active]="currentUrl == '/cursos'" [routerLink]="'/cursos'">Cursos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [class.active]="currentUrl == '/mentores'" [routerLink]="'/mentores'">Mentores</a>
+      </li>
+    </ul>
+      <button class="btn btn-success my-2 my-sm-0 float-right"  [routerLink]="'/login'">Login</button>
+</nav>

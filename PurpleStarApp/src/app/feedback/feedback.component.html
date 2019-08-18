@@ -1,0 +1,167 @@
+<app-navbar></app-navbar>
+
+<div class="container p-5" >
+    <div class="row">
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col">
+                    <img src="assets/grafico.png" class="img-fluid"> 
+                </div>
+            </div>
+            <div class="row" >
+                <div class="col " style="margin: 15px 0px   0px  0px ;">
+                    <label class="font-weight-bolder h3">Últimos Feedbacks</label>
+                </div>
+            </div>
+            <div class="row" >
+                <div class="col" style="margin: 15px 0px   0px  0px ;">
+                    <div class="card text-light" style="width: 100%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Hands On</h5>
+                            <label class="card-text">
+                                <p style="font-size: 12px; padding: 0px;">Desculpas nao resolvem problemas, Ações sim.</p>
+                                <i>"Excelente Profissional, desempenha as ativi..."</i>
+                            </label>
+                            <a class="btn btn-success"  style="width: 100%;">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" style="margin: 15px 0px   0px  0px ;">
+                    <div class="card text-light" style="width: 100%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Own Way</h5>
+                            <label class="card-text">
+                                <p style="font-size: 12px; padding: 0px;">Se nunca foi feito, a gente cria o caminho.</p>
+                                <i>"Excelente Profissional, desempenha as ativi..."</i>
+                            </label>
+                            <a class="btn btn-success"  style="width: 100%;">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" style="margin: 15px 0px   0px  0px ;">
+                    <div class="card text-light" style="width: 100%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Think Big</h5>
+                            <label class="card-text">
+                                <p style="font-size: 12px; padding: 0px;">Grandes Ideias, resultados maiores ainda</p>
+                                <i>"Excelente Profissional, desempenha as ativi..."</i>
+                            </label>
+                            <a class="btn btn-success"  style="width: 100%;">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" style="margin: 15px 0px   0px  0px ;">
+                        <label class="font-weight-bolder h3">Avaliar squad</label>
+                </div>
+            </div>
+        </div>
+        <!--                users                      -->
+        <div class="col-md-3 bg-white" style="border-radius: 20px;">
+            <div class="row">
+                <div class="col"  >
+                    <label class="float-right material-icons">edit</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img [src]="users.img" class="rounded-circle mx-auto d-block" style="height: 90px; width: 90px;" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="font-weight-bold text-center" style="margin:15px 0px 0px 0px;">{{users.nome}}</p>
+                    <p class="text-muted text-center" style="font-size: 12px" >{{cargo}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" style="padding: 0px 37px 0px 37px ">
+                    <img src="assets/Onfire.svg" class=" p-2" alt="">
+                    <img src="assets/Fast_Graduate.svg" class=" p-2" alt="">
+                    <img src="assets/Challenge_Medal.svg" class=" p-2" alt="">
+                    <img src="assets/Top_Student.svg" class=" p-2"alt="">
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <b class="text-muted" style="font-size: 12px">
+                        E-MAIL
+                    </b>
+                </div>
+            </div>
+            <div class="row" >
+                <div class="col">
+                    <label style="font-size: 14px">{{users.email}}</label>
+                </div>
+            </div>
+            <div class="row" >
+                <div class="col"  style="margin: 20px 0px 0px 0px ">
+                    <b class="text-muted" style="font-size: 12px">
+                        NUMERO
+                    </b>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label style="font-size: 14px">{{users.numero}}</label>
+                </div>
+            </div>
+            <div class="row" >
+                <div class="col"  style="margin: 20px 0px 0px 0px ">
+                    <b class="text-muted" style="font-size: 12px">
+                        SKILL LEVEL
+                    </b>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                        <div class="col">
+                                <label style="font-size: 14px">{{users.id_skill}}</label>
+                            </div>
+                </div>
+            </div>
+            <div class="row" >
+                <div class="col"  style="margin: 20px 0px 0px 0px ">
+                    <b class="text-muted" style="font-size: 12px">
+                        NIVEL DE ENGAJAMENTO
+                    </b>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">15%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" >
+                <div class="col"  style="margin: 20px 0px 0px 0px ">
+                    <b class="text-muted" style="font-size: 12px">
+                        BIO
+                    </b>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label style="font-size: 14px">{{users.bio}}</label>
+                </div>
+            </div>
+            <div class="row" >
+                <div class="col"  style="margin: 20px 0px 0px 0px ">
+                    <b class="text-muted" style="font-size: 12px">
+                        SKILL
+                    </b>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <span class="badge badge-primary p-2" >Primary</span>
+                    <span class="badge badge-success p-2" >Primary</span>
+                    <span class="badge badge-primary p-2" style="background-color: #4a2182" >Primary</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
