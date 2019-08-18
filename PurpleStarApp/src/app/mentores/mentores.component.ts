@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mentores.component.css']
 })
 export class MentoresComponent implements OnInit {
-
+  filterByString:string ='Popular'
   constructor() { }
 
   ngOnInit() {

@@ -53,28 +53,21 @@
             </div>
             <div class="row">
                 <div class="col" style="margin: 15px 0px   0px  0px ;">
-                        <label class="font-weight-bolder h3">Avaliar squad</label>
+                        <label class="font-weight-bolder h3">Tech Leader Report</label>
                 </div>
             </div>
-            <div class="squad">
-                <div class="row">
-                    <div class="col" >
-                        <img src="assets/carinha.png" class="img-fluid ">
-                        <div class="centered">Roberto</div>
-                    </div>
-                    <div class="col" >
-                        <img src="assets/carinha.png" class="img-fluid ">
-                        <div class="centered">Gilerto</div>
-                    </div>
-                    <div class="col" >
-                        <img src="assets/cazalbe.jpg" class="img-fluid " [routerLink]="'/fb_techlead'">
-                        <div class="centered">Carlos Alberto</div>
-                    </div>
+            <div class="row">
+                <div class="col">
+                    <img src="assets/grafico.png" class="img-fluid"> 
+                </div>
+                <div class="col">
+                    <img src="assets/grafico.png" class="img-fluid"> 
                 </div>
             </div>
             
         </div>
         <!--                users                      -->
+
         <div class="col-md-3 bg-white" style="border-radius: 20px;">
             <div class="row">
                 <div class="col"  >
@@ -89,7 +82,7 @@
             <div class="row">
                 <div class="col">
                     <p class="font-weight-bold text-center" style="margin:15px 0px 0px 0px;">{{users.nome}}</p>
-                    <p class="text-muted text-center" style="font-size: 12px" >{{cargo}}</p>
+                    <p class="text-muted text-center" style="font-size: 12px" >{{users.cargo}}</p>
                 </div>
             </div>
             <div class="row">

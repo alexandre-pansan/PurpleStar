@@ -18,11 +18,7 @@ export class UsersService {
       return this._http.get<Users[]>(this._ulr);
     }
 
-    getUser(): Observable<Users[]>{
-      return this._http.get<Users[]>(this._ulr+"/6");
+    getUser(id: number): Observable<Users[]>{
+      return this._http.get<Users[]>(this._ulr+"/"+id);
     }
-    getUsersArea(id: string): Observable<Users[]>{
-      return this._http.get<Users[]>(this._ulr+"/areas/"+id);
-    }
-
 }

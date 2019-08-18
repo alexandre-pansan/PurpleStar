@@ -1,2 +1,64 @@
 <app-navbar></app-navbar>
-<h1>ERROOOU</h1>
+<div class="main bg-light">
+    <div class="container">
+        <div class="row py-5">
+            <div class="col ">
+                    <p class="h2">Encontre Mentores</p>
+                    <p>Encontre mentores para receber auxilio no desenvolviento de suas skills</p>
+            </div>
+        
+        </div>
+        <div class="row py-5">
+            <div class="col">
+                <form class="form-inline">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text material-icons" id="basic-addon1">search</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Pesquisar" >
+                    </div>
+                </form>
+            </div>
+            <div class="col">
+                <div ngbDropdown class="d-inline-block float-right" style="max-width: 250px;">
+                    <button class="btn btn-outline-secondary" id="dropdownBasic1" ngbDropdownToggle>Organizar por: <b>{{filterByString}}</b></button>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                        <button ngbDropdownItem (click)="filterByString = 'Popular'">Popular</button>
+                        <button ngbDropdownItem (click)="filterByString = 'Recentes'">Recentes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col pb-5">
+                <app-cards-mentoria></app-cards-mentoria>
+            </div>
+            <div class="col pb-5">
+                <app-cards-mentoria></app-cards-mentoria>
+            </div>
+            <div class="col pb-5">
+                <app-cards-mentoria></app-cards-mentoria>
+            </div>
+            <div class="col pb-5">
+                <app-cards-mentoria></app-cards-mentoria>
+            </div>
+            <div class="col pb-5">
+                <app-cards-mentoria></app-cards-mentoria>
+            </div>
+            <div class="col pb-5">
+                <app-cards-mentoria></app-cards-mentoria>
+            </div>
+            <div class="col pb-5">
+                <app-cards-mentoria></app-cards-mentoria>
+            </div>
+            <div class="col pb-5">
+                <app-cards-mentoria></app-cards-mentoria>
+            </div>
+                
+    
+        </div>
+            
+    </div>
+</div>
+
+

@@ -1,0 +1,19 @@
+.stars{
+    position: relative;
+    margin: 10px 0px 10px 0px;
+    
+    height: 10px;
+    width: 100%;
+}
+.selected{
+    background-color: #35b749
+}
+.unselected{
+    background-color: #fff
+}
+img {
+    object-fit: cover;
+    width: 130px;
+    height: 130px;
+    border-radius: 10px;
+}

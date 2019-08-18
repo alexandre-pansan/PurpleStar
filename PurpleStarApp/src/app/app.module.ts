@@ -14,6 +14,11 @@ import { CardsComponent } from './cursos/cards/cards.component';
 import { MentoresComponent } from './mentores/mentores.component';
 import { UsersService } from './services/users.service';
 import { HttpClientModule } from '@angular/common/http';
+import { TechleaderComponent } from './feedback/techleader/techleader.component';
+import { CardsMentoriaComponent } from './mentores/cards-mentoria/cards-mentoria.component';
+import { RhComponent } from './rh/rh.component';
+import { DashboardComponent } from './rh/dashboard/dashboard.component';
+import { SkillsService } from './services/skills.service';
 
 @NgModule({
   declarations: [
@@ -25,7 +30,11 @@ import { HttpClientModule } from '@angular/common/http';
     PlanoCarreiraComponent,
     FeedbackComponent,
     CardsComponent,
-    MentoresComponent
+    MentoresComponent,
+    TechleaderComponent,
+    CardsMentoriaComponent,
+    RhComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +42,7 @@ import { HttpClientModule } from '@angular/common/http';
     NgbModule,
     HttpClientModule 
   ],
-  providers: [UsersService],
+  providers: [UsersService,SkillsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

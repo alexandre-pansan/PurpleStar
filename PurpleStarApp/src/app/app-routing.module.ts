@@ -7,6 +7,9 @@ import { CursosComponent } from './cursos/cursos.component';
 import { PlanoCarreiraComponent } from './plano-carreira/plano-carreira.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { MentoresComponent } from './mentores/mentores.component';
+import { TechleaderComponent } from './feedback/techleader/techleader.component';
+import { RhComponent } from './rh/rh.component';
+import { DashboardComponent } from './rh/dashboard/dashboard.component';
 
 
 const routes: Routes = [
@@ -34,6 +37,18 @@ const routes: Routes = [
   {
     path: 'mentores',
     component: MentoresComponent
+  },
+  {
+    path: 'fb_techlead',
+    component: TechleaderComponent
+  },
+  {
+    path: 'rh',
+    component: RhComponent
+  },
+  {
+    path: 'rh_dash',
+    component: DashboardComponent
   },
 ]
 

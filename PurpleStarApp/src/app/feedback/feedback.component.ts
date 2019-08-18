@@ -17,7 +17,7 @@ export class FeedbackComponent implements OnInit {
   users: Users[] = [];
   
   constructor(private _users: UsersService) {
-    this._users.getUser().subscribe((user)=>{this.users = user;})
+    this._users.getUser(6).subscribe((user)=>{this.users = user;})
    }
 
   ngOnInit() {

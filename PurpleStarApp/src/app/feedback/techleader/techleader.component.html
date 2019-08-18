@@ -1,0 +1,432 @@
+<app-navbar></app-navbar>
+<div class="row p-5">
+    <div class="col-md-6">
+        <img src="assets/cazalbe.jpg" class="img-fluid float-right d-block rounded-circle" style="height: 130px" alt="">
+    </div>
+    <div class="col-md-6" style="margin: 20px 0px 0px 0px">
+        <p class="h1">Carlos Alberto</p>
+        <p class="h4">Dono da Praça</p>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 100%; border-radius: 20px">
+                        <div class="card-img-top text-white p-4" style="border-radius: 20px; background-color: #4a2182;">
+                            <p class="h1">Think Big.</p>
+                            <p class="h5">Grandes ideias, resultados maiores ainda</p>
+                            <div class="row">
+                                <div class="col"  style="padding-right: 0px;">
+                                    <div class="stars" [class.selected]="starstb >= 1" [class.unselected]="starstb <= 0"  (click)="starstb = 1"></div>
+                                </div>
+                                <div class="col"  style="padding-right: 0px;">
+                                    <div class="stars" [class.selected]="starstb >= 2" [class.unselected]="starstb <= 1" (click)="starstb = 2"></div>
+                                </div>
+                                <div class="col"  style="padding-right: 0px;">
+                                    <div class="stars" [class.selected]="starstb >= 3" [class.unselected]="starstb <= 2" (click)="starstb = 3"></div>
+                                </div>
+                                <div class="col"  style="padding-right: 0px;">
+                                    <div class="stars" [class.selected]="starstb >= 4" [class.unselected]="starstb <= 3" (click)="starstb = 4"></div>
+                                </div>
+                                <div class="col"  style="padding-right: 0px;">
+                                    <div class="stars" [class.selected]="starstb >= 5" [class.unselected]="starstb <= 4" (click)="starstb = 5"></div>
+                                </div>
+                                <div class="col"  style="padding-right: 0px;">
+                                        <div class="">{{starstb}}/5</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-body">
+                                <textarea class="form-control"  rows=8 style="border: none;resize: none"></textarea>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 100%; border-radius: 20px">
+                        <div class="card-img-top text-white p-4" style="border-radius: 20px; background-color: #4a2182;">
+                            <p class="h1">Own Way.</p>
+                            <p class="h5">Fazendo nosso futuro</p>
+                            <div class="row">
+                                <div class="col"  style="padding-right: 0px;">
+                                    <div class="stars" [class.selected]="starsow >= 1" [class.unselected]="starsow <= 0"  (click)="starsow = 1"></div>
+                                </div>
+                                <div class="col"  style="padding-right: 0px;">
+                                    <div class="stars" [class.selected]="starsow >= 2" [class.unselected]="starsow <= 1" (click)="starsow = 2"></div>
+                                </div>
+                                <div class="col"  style="padding-right: 0px;">
+                                    <div class="stars" [class.selected]="starsow >= 3" [class.unselected]="starsow <= 2" (click)="starsow = 3"></div>
+                                </div>
+                                <div class="col"  style="padding-right: 0px;">
+                                    <div class="stars" [class.selected]="starsow >= 4" [class.unselected]="starsow <= 3" (click)="starsow = 4"></div>
+                                </div>
+                                <div class="col"  style="padding-right: 0px;">
+                                    <div class="stars" [class.selected]="starsow >= 5" [class.unselected]="starsow <= 4" (click)="starsow = 5"></div>
+                                </div>
+                                <div class="col"  style="padding-right: 0px;">
+                                        <div class="">{{starsow}}/5</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-body">
+                                <textarea class="form-control"  rows=8 style="border: none;resize: none"></textarea>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 100%; border-radius: 20px">
+                        <div class="card-img-top text-white p-4" style="border-radius: 20px; background-color: #4a2182;">
+                            <p class="h1">Hands On.</p>
+                            <p class="h5">Mão na massa</p>
+                            <div class="row">
+                                <div class="col"  style="padding-right: 0px;">
+                                    <div class="stars" [class.selected]="starsho >= 1" [class.unselected]="starsho <= 0"  (click)="starsho = 1"></div>
+                                </div>
+                                <div class="col"  style="padding-right: 0px;">
+                                    <div class="stars" [class.selected]="starsho >= 2" [class.unselected]="starsho <= 1" (click)="starsho = 2"></div>
+                                </div>
+                                <div class="col"  style="padding-right: 0px;">
+                                    <div class="stars" [class.selected]="starsho >= 3" [class.unselected]="starsho <= 2" (click)="starsho = 3"></div>
+                                </div>
+                                <div class="col"  style="padding-right: 0px;">
+                                    <div class="stars" [class.selected]="starsho >= 4" [class.unselected]="starsho <= 3" (click)="starsho = 4"></div>
+                                </div>
+                                <div class="col"  style="padding-right: 0px;">
+                                    <div class="stars" [class.selected]="starsho >= 5" [class.unselected]="starsho <= 4" (click)="starsho = 5"></div>
+                                </div>
+                                <div class="col"  style="padding-right: 0px;">
+                                        <div class="">{{starsho}}/5</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-body">
+                            <textarea class="form-control" rows=8 style="border: none;resize: none"></textarea>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="row bg-white p-4" style="border-radius: 20px">
+                <div class="col">
+                    <p class="h4" style="padding: 20px 0px 0px 0px">Entrega de resultados</p>
+                    <div class="row">
+                        <div class="col">
+                            <p style="padding: 20px 0px 0px 0px">Demonstra conhecer os aspectos técncos da sua àrea de atuação prodissional agregando conhecimento no desenvolvimento das atividades propostas.</p>
+                            <div class="row ">
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-danger" style="height: 48px; width:48px ">1</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-danger" style="height: 48px; width:48px " >2</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-danger" style="height: 48px; width:48px " >3</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-danger" style="height: 48px; width:48px " >4</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-warning" style="height: 48px; width:48px " >5</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-warning" style="height: 48px; width:48px " >6</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-warning" style="height: 48px; width:48px " >7</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-success" style="height: 48px; width:48px " >8</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-success" style="height: 48px; width:48px " >9</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-success" style="height: 48px; width:48px " >10</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p style="padding: 20px 0px 0px 0px">Possui orientação para a entrega de resultados com consistência:</p>
+                            <div class="row ">
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-danger" style="height: 48px; width:48px " >1</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-danger" style="height: 48px; width:48px " >2</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-danger" style="height: 48px; width:48px " >3</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-danger" style="height: 48px; width:48px " >4</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-warning" style="height: 48px; width:48px " >5</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-warning" style="height: 48px; width:48px " >6</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-warning" style="height: 48px; width:48px " >7</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-success" style="height: 48px; width:48px " >8</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-success" style="height: 48px; width:48px " >9</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-success" style="height: 48px; width:48px " >10</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p style="padding: 20px 0px 0px 0px">Bucca inovar nas soluções sempre que necessario:</p>
+                            <div class="row ">
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-danger" style="height: 48px; width:48px " >1</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-danger" style="height: 48px; width:48px " >2</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-danger" style="height: 48px; width:48px " >3</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-danger" style="height: 48px; width:48px " >4</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-warning" style="height: 48px; width:48px " >5</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-warning" style="height: 48px; width:48px " >6</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-warning" style="height: 48px; width:48px " >7</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-success" style="height: 48px; width:48px " >8</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-success" style="height: 48px; width:48px " >9</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-success" style="height: 48px; width:48px " >10</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p style="padding: 20px 0px 0px 0px">Demonstra Capacidade de trabalhar sob pressão e lidar com situações críticas</p>
+                            <div class="row ">
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-danger" style="height: 48px; width:48px " >1</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-danger" style="height: 48px; width:48px " >2</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-danger" style="height: 48px; width:48px " >3</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-danger" style="height: 48px; width:48px " >4</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-warning" style="height: 48px; width:48px " >5</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-warning" style="height: 48px; width:48px " >6</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-warning" style="height: 48px; width:48px " >7</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-success" style="height: 48px; width:48px " >8</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-success" style="height: 48px; width:48px " >9</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-success" style="height: 48px; width:48px " >10</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="h4" style="padding: 20px 0px 0px 0px">Engajamento e trabalho em equipe</p>
+                    <div class="row">
+                        <div class="col">
+                            <p style="padding: 20px 0px 0px 0px">Toma decisões e assume responsabilidade no trabalho em equipe</p>
+                            <div class="row ">
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-danger" style="height: 48px; width:48px " >1</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-danger" style="height: 48px; width:48px " >2</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-danger" style="height: 48px; width:48px " >3</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-danger" style="height: 48px; width:48px " >4</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-warning" style="height: 48px; width:48px " >5</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-warning" style="height: 48px; width:48px " >6</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-warning" style="height: 48px; width:48px " >7</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-success" style="height: 48px; width:48px " >8</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-success" style="height: 48px; width:48px " >9</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-success" style="height: 48px; width:48px " >10</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p style="padding: 20px 0px 0px 0px">Considera e respeira a opiniao dos membros do grupo</p>
+                            <div class="row ">
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-danger" style="height: 48px; width:48px " >1</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-danger" style="height: 48px; width:48px " >2</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-danger" style="height: 48px; width:48px " >3</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-danger" style="height: 48px; width:48px " >4</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-warning" style="height: 48px; width:48px " >5</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-warning" style="height: 48px; width:48px " >6</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-warning" style="height: 48px; width:48px " >7</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-success" style="height: 48px; width:48px " >8</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-success" style="height: 48px; width:48px " >9</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-success" style="height: 48px; width:48px " >10</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p style="padding: 20px 0px 0px 0px">Está disposto a colaborarcom o todo independente de ser a sua função:</p>
+                            <div class="row ">
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-danger" style="height: 48px; width:48px " >1</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-danger" style="height: 48px; width:48px " >2</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-danger" style="height: 48px; width:48px " >3</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-danger" style="height: 48px; width:48px " >4</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-warning" style="height: 48px; width:48px " >5</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-warning" style="height: 48px; width:48px " >6</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-warning" style="height: 48px; width:48px " >7</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-success" style="height: 48px; width:48px " >8</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-success" style="height: 48px; width:48px " >9</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-success" style="height: 48px; width:48px " >10</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p style="padding: 20px 0px 0px 0px">Comunica-se de forma clara e objetiva</p>
+                            <div class="row ">
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-danger" style="height: 48px; width:48px " >1</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-danger" style="height: 48px; width:48px " >2</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-danger" style="height: 48px; width:48px " >3</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-danger" style="height: 48px; width:48px " >4</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-warning" style="height: 48px; width:48px " >5</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-warning" style="height: 48px; width:48px " >6</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-warning" style="height: 48px; width:48px " >7</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-success" style="height: 48px; width:48px " >8</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-success" style="height: 48px; width:48px " >9</button>
+                                </div>
+                                <div class="col-md-1" style="margin: 0px 3px 0px 3px">
+                                    <button class="btn btn-outline-success" style="height: 48px; width:48px " >10</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row py-5 float-right">
+                        <div class="col ">
+                            <button class="btn btn-success">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

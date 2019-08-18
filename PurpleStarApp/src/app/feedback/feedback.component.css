@@ -2,3 +2,30 @@
     background-color: #4a2182;
     border-radius: 20px;
 }
+
+.squad {
+    padding: 10px 0px 10px;
+    position: relative;
+}
+
+.squad img {
+    object-fit: cover;
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.squad label{
+    background-image: linear-gradient(to top, rgba(196, 196, 196, 0), rgba(74, 33, 130, 0.78));
+    width: 100%;
+}
+    
+
+.centered {
+    
+    position: absolute;
+    color: white;
+    top: 70%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+  }
